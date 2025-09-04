@@ -1,0 +1,27 @@
+
+#uno{
+    background-color: #7b2cbf;
+}
+body{
+    background-color: #7b2cbf;
+}
+.navbar-barra{
+    background-color: #7b2cbf !important;
+}
+#dos{
+    background-color: #5a189a;
+    padding-top: 20vh;
+}
+.poto{
+    background-color:  transparent;
+    border-color: transparent;
+}
+.color-timenum{
+    color: #ff6d00 !important;
+}
+#tres{
+    padding-top: 5%;
+    margin-top: auto;
+    place-items: center;
+    
+}

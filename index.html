@@ -9,35 +9,73 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header>
-            <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/WhatsApp_Image_2025-09-02_at_00.04.20-removebg-preview.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                           <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+        <header class="row">
+            <div id="uno" class="col-xs-12 col-md-12">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-barra">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/WhatsApp_Image_2025-09-02_at_00.04.20-removebg-preview.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Eventos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Comunidad</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </nav>
+            </div>
+            <div id="dos" class="col-xs-12 col-md-12">
+                <img class="mx-auto d-block" src="img/images-removebg-preview.png" alt="acdc">
+            </div>
+            
+            
+            <div id="tres" class="col-xs-12 col-md-12">
+                <div class="contador">
+                    <div class="tiempo">
+                        <span class="numero" id="dias"></span>
+                        <span class="etiqueta">Dias</span>                  
+                    </div>
+                    <div class="tiempo">
+                        <span class="numero" id="horas"></span> 
+                        <span class="etiqueta">Hr</span>
+                    </div>
+                    <div class="tiempo">
+                        <span class="numero" id="minutos"></span> 
+                        <span class="etiqueta">Min</span>
+                    </div>
+                    <div class="tiempo">
+                        <span class="numero" id="segundos"></span>
+                        <span class="etiqueta">Seg</span>
+                    </div>
+                </div>  
+
+                <div class="dropdown menu-mas">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-info-circle me-2"></i> Mas Informacion
+                    </button>
+                    <div class="dropdown-menu custom-dropdown">
+                        <div class="dropdown-content">
+                            <h5>Informacion general del show</h5>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio veritatis nostrum quibusdam optio impedit fugiat officia facilis cum alias. Placeat veritatis, perferendis beatae necessitatibus eveniet porro quae totam dolore?</p>
+                        </div>
+                    </div>  
                 </div>
-            </nav>
+            </div>
         </header>
     </div>
+    <script src="js/index.script.contador.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
