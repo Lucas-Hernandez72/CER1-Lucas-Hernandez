@@ -147,6 +147,9 @@ body{
     text-align: center;
     text-size-adjust: initial;
     transform: translateY(2vh);
+    max-height: 5vh;
+    padding: 5vh;
+    overflow-y: auto;
 }
 .btn-comen{
     background-color: #5a189a;
