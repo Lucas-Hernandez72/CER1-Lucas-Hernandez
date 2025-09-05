@@ -14,7 +14,7 @@
 body{
     background-color: #7b2cbf;
 }
-.navbar-barra{
+.navbarbarra{
     background-color: #7b2cbf !important;
 }
 
@@ -100,17 +100,11 @@ body{
 ----------------evento---------------------
 -----------------------------------------*/
 
-.evento{
-    background-color: #5a189a;
-}
+
 .cards{
     background-color: #5a189a !important;
     gap: 5vh;
     padding-top: 5vh;
-    margin-bottom: 3vh;
-    display: flex !important;
-    justify-content: center !important;
-
 }
 .card-color{
     background-color: #3c096c;
@@ -152,6 +146,7 @@ body{
     color: #ff9e00;
     text-align: center;
     text-size-adjust: initial;
+    transform: translateY(2vh);
 }
 .btn-comen{
     background-color: #5a189a;
