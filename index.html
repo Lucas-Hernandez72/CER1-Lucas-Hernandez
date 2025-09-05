@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="row">
+    <div class="container-fluid ">
+        <header id="Home" class="row">
             <div id="uno" class="col-xs-12 col-md-12">
 
                 <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-barra">
@@ -23,13 +23,13 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Eventos</a>
+                                    <a class="nav-link" href="#eventoss">Eventos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Comunidad</a>
+                                    <a class="nav-link" href="#Comentarioss">Comunidad</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,21 +61,103 @@
                     </div>
                 </div>  
 
-                <div class="dropdown menu-mas">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown-center menu-mas text-center">
+                    <button class="btn dropdown-toggle btn-inf" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-info-circle me-2"></i> Mas Informacion
                     </button>
-                    <div class="dropdown-menu custom-dropdown">
-                        <div class="dropdown-content">
-                            <h5>Informacion general del show</h5>
-                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio veritatis nostrum quibusdam optio impedit fugiat officia facilis cum alias. Placeat veritatis, perferendis beatae necessitatibus eveniet porro quae totam dolore?</p>
+                    <div class="dropdown-menu custom-dropdown info-show">
+                        <div class="dropdown-content total-centrado">
+                            <h5 class="titu-show">Informacion general del show</h5>
+                            <p class="mb-3 text-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio veritatis nostrum quibusdam optio impedit fugiat officia facilis cum alias. Placeat veritatis, perferendis beatae necessitatibus eveniet porro quae totam dolore?</p>
                         </div>
                     </div>  
                 </div>
             </div>
         </header>
+
+        <section id="eventoss" class="row evento cards ">
+
+            <div class="col-xm-12 col-md-4 col-lg-3">
+                <div class="card card-color" style="width: 18rem;">
+                    <img src="img/queen.jpg" class="card-img-top" alt="imagen de queen">
+                    <div class="card-body text-center">
+                      <h5 class="card-title titulo-card">Queen</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                       <li class="list-group-item indice-card"><h6>Fecha</h6> 15/10/2025</li>
+                       <li class="list-group-item indice-card"><h6>Hora</h6> 9:00 p.m</li>
+                       <li class="list-group-item indice-card"><h6>Valor</h6> 100.000$</li>
+                    </ul>
+                    <div class="card-body ">
+                       <a target="_blank" href="https://www.google.com/maps/place/Movistar+Arena/@-33.4625726,-70.6642699,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c51b935c0c23:0xfe177137c9c9c6c8!8m2!3d-33.4625726!4d-70.661695!16zL20vMGRqajk0?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" class="card-link link-color ">Direccion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3">
+                <div class="card card-color" style="width: 18rem;">
+                    <img src="img/heart.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title titulo-card text-center">Heart</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                       <li class="list-group-item indice-card"><h6>Fecha</h6> 19/10/2025</li>
+                       <li class="list-group-item indice-card"><h6>Hora</h6> 7:00 p.m</li>
+                       <li class="list-group-item indice-card"><h6>Valor</h6> 50.000$</li>
+                    </ul>
+                    <div class="card-body ">
+                       <a target="_blank" href="https://www.google.com/maps/place/Movistar+Arena/@-33.4625726,-70.6642699,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c51b935c0c23:0xfe177137c9c9c6c8!8m2!3d-33.4625726!4d-70.661695!16zL20vMGRqajk0?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" class="card-link link-color ">Direccion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3">
+                <div class="card card-color" style="width: 18rem;">
+                    <img src="img/bon jovi.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center titulo-card">Bon Jovi</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                       <li class="list-group-item indice-card"><h6>Fecha</h6> 25/11/2025</li>
+                       <li class="list-group-item indice-card"><h6>Hora</h6> 10:00 p.m</li>
+                       <li class="list-group-item indice-card"><h6>Valor</h6> 70.000$</li>
+                    </ul>
+                    <div class="card-body ">
+                       <a target="_blank" href="https://www.google.com/maps/place/Movistar+Arena/@-33.4625726,-70.6642699,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c51b935c0c23:0xfe177137c9c9c6c8!8m2!3d-33.4625726!4d-70.661695!16zL20vMGRqajk0?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" class="card-link link-color ">Direccion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Comentarioss" class="row cards">
+            <div class="container py-5 fondo-com">
+                <div id="comments-section">
+                    <form id="comment-form">
+                        <h2>Comentarios</h2>
+                        <div class="com">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="com">
+                            <label for="comment">Comentario:</label>
+                            <textarea id="comment" name="comment" rows="4" required></textarea>
+                        </div>
+                        <button class="btn-comen" type="submit">Enviar Comentario</button>
+                    </form>
+                    <ul class="com-en" id="comments-list">
+                        <!-- Los comentarios se agregarán aquí con JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="color-footer">
+             <small>Copiryte @ 2025 - smart events</small>
+
+            <a href="mailto:smartevents@gmail.com">Enviame un correo aqui</a>
+            <a href="tel: +56801291000">telefono</a>
+            <a href="whatsapp ://send (numerotelefono2) text = hola lucas">Enviame un mensaje al whatsapp</a>          
+        </footer>
     </div>
     <script src="js/index.script.contador.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

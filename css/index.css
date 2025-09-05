@@ -1,6 +1,15 @@
 
-#uno{
-    background-color: #7b2cbf;
+#uno{background-color: #7b2cbf;}
+#dos{
+    background-image: url(../img/banda\ de\ rock.png);
+    background-position: center;
+    background-size: contain;
+    padding-top: 20vh;
+}
+#tres{background-color: #3c096c;}
+
+.total-centrado{
+    text-align: center !important;
 }
 body{
     background-color: #7b2cbf;
@@ -8,10 +17,7 @@ body{
 .navbar-barra{
     background-color: #7b2cbf !important;
 }
-#dos{
-    background-color: #5a189a;
-    padding-top: 20vh;
-}
+
 .poto{
     background-color:  transparent;
     border-color: transparent;
@@ -19,9 +25,144 @@ body{
 .color-timenum{
     color: #ff6d00 !important;
 }
-#tres{
-    padding-top: 5%;
-    margin-top: auto;
-    place-items: center;
-    
+#tres{background-color: #3c096c;}
+
+/*-----------------------------
+ ---------contador------------- 
+ -----------------------------*/
+
+.contador{
+    display: flex;
+    gap: 5vh; /* gap es para dejar separacion en los elementos*/
+    justify-content: center; 
+    padding-top: 5vh;
+    margin-bottom: 2vh; /*margen de manera vertical por la zona de abajo*/
+}
+.tiempo{
+    display: flex; /*flex para determinar como se comporta*/
+    flex-direction: column;
+    align-items: center;/*alinea todos los objetos dentros de tiempo*/
+}
+.numero{
+    font-size: 7vh;
+    font-weight: 700;
+    color: #ff6d00;
+
+}
+.etiqueta{
+    font-size: 3vh;
+    font-weight: 700; /*font cambiar propiedades de las letras*/
+    color: #ff6d00;
+    /*text-align: center;*/ /*para manipular texto y centrarlo*/
+}
+
+/*------------------------------
+--------mas informacion---------
+------------------------------*/
+
+.menu-mas{
+    color: white;
+    padding-top: 3vh;
+    margin-bottom: 6vh;
+}
+.info-show{
+    background-color: #7b2cbf;
+    border-color: transparent;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 2vh;
+
+}
+.titu-show{
+    color: #ff6d00;
+    font-weight: 700;
+}
+
+.text-show{
+    color: #ff9e00; 
+}
+
+.btn-inf{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: 900;
+    font-size: 3vh;
+    color: #ff9e00;
+}
+.btn-inf:hover{
+    background-color: #7b2cbf;
+    border-color: #5a189a;
+    text-decoration: underline;
+}
+
+/*-----------------------------------------
+----------------evento---------------------
+-----------------------------------------*/
+
+.evento{
+    background-color: #5a189a;
+}
+.cards{
+    background-color: #5a189a !important;
+    gap: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 3vh;
+    display: flex !important;
+    justify-content: center !important;
+
+}
+.card-color{
+    background-color: #3c096c;
+    color: #ff6d00;
+}
+.indice-card{
+    color: #ff8500;
+    background-color: #5a189a;
+    border-color: #3c096c;
+}
+.link-color{
+    color: #ff9e00  !important;
+}
+.titulo-card{
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+/*----------------------------------------
+--------------Comentarios-----------------
+-----------------------------------------*/
+
+
+.fondo-com{
+    background-color: #3c096c;
+    border-radius: 5vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    margin-bottom: 10vh;
+    width: 70vh;
+    color: #ff6d00;
+}
+
+.com{
+    display: flex;
+    flex-direction: column;
+}
+.com-en{
+    color: #ff9e00;
+    text-align: center;
+    text-size-adjust: initial;
+}
+.btn-comen{
+    background-color: #5a189a;
+    color: #ff6d00;
+    padding: 3%;
+    transform: translateY(1vh);
+    border: none;
+    border-radius: 1vh;
+    font-weight: bold;
+}
+
+.color-footer{
+    background-color: #5a189a;
 }

@@ -25,7 +25,41 @@ function actualizar_hora(){
     dias.textContent = dias_restantes;
     horas.textContent = horas_restantes;
     minutos.textContent = minutos_restantes;
-    segundos.textContent = minutos_restantes;
+    segundos.textContent = segundos_restantes;
 }
 actualizar_hora();
-setInterval(actualizar_hora, mili_segundos);
+setInterval(actualizar_hora, 1000);
+function fecha(){
+    const ahora = new Date();
+    const dia = ahora.getDate().toString().padStart(2, '0');
+    const mes = (ahora.getMonth() + 1).toString().padStart(2, '0');
+    const año = ahora.getFullYear();
+    
+    const fecha = `${dia}/${mes}/${año}`;
+    return fecha
+}
+
+
+document.getElementById('comment-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío tradicional del formulario
+    const ahora = fecha()
+    const name = document.getElementById('name').value;
+    const commentText = document.getElementById('comment').value;
+    const nameF = name+' '+ahora
+
+    if (name && commentText) {
+        if(commentText.length <501){
+            const commentsList = document.getElementById('comments-list');
+    
+            const newComment = document.createElement('li');
+            newComment.innerHTML = `<strong>${nameF}:</strong> ${commentText}`; // Muestra el nombre y comentario
+    
+            commentsList.appendChild(newComment);
+    
+            // Limpiar el formulario
+            document.getElementById('comment-form').reset();
+        }else{
+            
+        }
+    }
+});
