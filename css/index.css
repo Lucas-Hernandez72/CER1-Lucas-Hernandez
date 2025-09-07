@@ -55,6 +55,16 @@ body{
     color: #ff6d00;
     /*text-align: center;*/ /*para manipular texto y centrarlo*/
 }
+.comenzado {
+    background-color: transparent;
+    color: #ff6d00;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
 
 /*------------------------------
 --------mas informacion---------
